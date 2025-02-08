@@ -5,6 +5,9 @@ from modules import shared
 import threading
 import time, os
 from time import mktime
+import asyncio
+
+asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 github_link = "https://github.com/kabachuha/discord-rpc-for-automatic1111-webui"
 
